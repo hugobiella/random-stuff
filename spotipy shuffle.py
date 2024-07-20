@@ -2,9 +2,9 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import random
 
-client_id = 'b5b08f65cb17409fb2c70555386a9f0f'
-client_secret = '9fea476dcdb94f228d764cb1d99245fb'
-redirect_uri = 'https://open.spotify.com/playlist/207ZaqdhQRThK28IbG2MCK'
+client_id = ''
+client_secret = ''
+redirect_uri = ''
 
 scope = "playlist-modify-private playlist-modify-public"
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=client_id,
@@ -12,7 +12,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=client_id,
                                                redirect_uri=redirect_uri,
                                                scope=scope))
 
-playlist_id = 'https://open.spotify.com/playlist/0Duk3UcSHykjDBpybAsS2A?si=b53baf75c1f24377'
+playlist_id = ''
 
 results = sp.playlist_tracks(playlist_id)
 tracks = results['items']
